@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require 'uri'
+
+puts "&lt;img src=\"http://yuml.me/diagram/scruffy/class/#{URI.escape(STDIN.read.strip.gsub(/\n+/, ', '))}\"/&gt;"</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@1</string>
+	<key>name</key>
+	<string>Preview class diagram (Scruffy)</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>04B529B8-FA91-4FB8-9662-B674809B8CD7</string>
+</dict>
+</plist>
