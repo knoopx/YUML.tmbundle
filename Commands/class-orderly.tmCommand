@@ -9,7 +9,7 @@
 
 require 'uri'
 
-puts "&lt;img src=\"http://yuml.me/diagram/class/#{URI.escape(STDIN.read.strip.gsub(/\n+/, ', '))}\"/&gt;"</string>
+puts %Q(&lt;img src="http://yuml.me/diagram/class/#{URI.escape(STDIN.read.strip.gsub(/\n+/, ', '))}"/&gt;)</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
