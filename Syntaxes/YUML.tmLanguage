@@ -8,8 +8,49 @@
 	</array>
 	<key>name</key>
 	<string>yuml.me</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>[^\(\)\&lt;\&gt;\-]*?-\&gt;</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>variable.yuml.activity</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>.+?</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\&lt;</string>
+			<key>end</key>
+			<string>\&gt;</string>
+			<key>name</key>
+			<string>constant.language.yuml.activity</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>.+?</string>
+					<key>name</key>
+					<string>constant.language.yuml.activity</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
 	<key>scopeName</key>
-	<string>yuml.me</string>
+	<string>text.yuml.activity</string>
 	<key>uuid</key>
 	<string>38B0AE4B-F6FF-4B4F-8EEC-F436437793FA</string>
 </dict>
